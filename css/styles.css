@@ -1,0 +1,56 @@
+
+header {
+    background-color: #44566c;
+}
+
+.finished-projects-section {
+    background-color: #153EBE;
+}
+
+.profil-section {
+    justify-content: space-evenly;
+    gap: 4em;
+    align-items: center;
+    height: 100vh;
+}
+
+.current-project-section {
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20em;
+    background-color: #75D30C;
+}
+
+.finished-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    height: 30em;
+}
+
+section.current-project-section, section.finished-projects-section {
+    height: 100vh;
+}
+
+nav {
+    justify-content: center;
+    gap: 1em;
+}
+
+h2 {
+    text-align: center;
+}
+
+section.finished-projects-section > h2 {
+    line-height: 4em;
+    font-size: 2em;
+    background-color: red;
+}
+
+.flex-row {
+    display: flex;
+}
+
+footer {
+    display: none;
+}
