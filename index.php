@@ -1,0 +1,81 @@
+<?php
+include ("app/functions/functions.php");
+echo connectToDB();
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="flex-row">
+            <p>Mon profil</p>
+            <p>Mes projets en cours</p>
+            <p>Mes projets finis</p>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profil-section flex-row">
+            <div>
+                <img src="img/Profil.png" alt="Profil">
+                <h1>Max Relekom, 22 ans</h1>
+            </div>
+
+            <div class="profil">
+                <button>Voir mon CV</button>
+            </div>
+        </section>
+
+        <section class="projects">
+            <section class="current-project-section flex-row">
+                <h2>Projet en cours</h2>
+
+                <section class="current-project">
+                    <div class="project">
+                        <img src="" alt="Image projet">
+                        <h2>Nom projet</h2>
+    
+                        <p>Description</p>
+                    </div>
+                </section>
+            </section>
+
+            <section class="finished-projects-section">
+                <h2>Projet finis</h2>
+
+                <section class="finished-projects">
+                    <div class="project">
+                        <img src="" alt="Image projet">
+                        <h2>Nom projet</h2>
+    
+                        <p>Description</p>
+                    </div>
+
+                    <div class="project">
+                        <img src="" alt="Image projet">
+                        <h2>Nom projet</h2>
+    
+                        <p>Description</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <form action="" method="POST">
+            <label for="name">Nom</label><input type="text" name="name" id="name">
+            <label for="surname">Prénom</label><input type="text" name="surname" id="surname">
+            <label for="mail">Mail</label><input type="email" name="mail" id="mail">
+            <label for="msg">Message</label><textarea name="msg" id="" cols="5" rows="5"></textarea>
+        </form>
+    </footer>
+</body>
+</html>
